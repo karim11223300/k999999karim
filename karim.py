@@ -73,7 +73,7 @@ def send_results_periodically():
     global created
     global failed
 
-executor=concurrent.futures.ThreadPoolExecutor(max_workers=250)
+executor=concurrent.futures.ThreadPoolExecutor(max_workers=500)
 executor.submit(send_results_periodically)
 
 
